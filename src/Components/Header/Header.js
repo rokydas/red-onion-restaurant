@@ -3,6 +3,7 @@ import { Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../images/logo2.png';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -15,8 +16,8 @@ const Header = () => {
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
                     <Navbar.Text className="nav-text"><ShoppingCartOutlinedIcon/></Navbar.Text>
-                    <Navbar.Text className="nav-text">Login</Navbar.Text>
-                    <Navbar.Text className="nav-text"><button className="custom-btn">Sign Up</button></Navbar.Text>
+                    <Link to="/signin"><Navbar.Text className="nav-text">Login</Navbar.Text></Link>
+                    <button className="custom-btn"><Navbar.Text><Link to="/signup">Sign Up</Link></Navbar.Text></button>
                 </Navbar.Collapse>
             </Navbar>
             <section className="banner">

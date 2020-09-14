@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +11,9 @@ import Signin from './Components/Signin/Signin';
 import Signup from './Components/Signup/Signup';
 
 function App() {
+
+  // const [signedInUser, setSignedInUser] = createState();
+
   return (
     <div>
       <Router>

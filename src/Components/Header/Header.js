@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className="header">
             <Navbar bg="white" expand="lg">
-                <Navbar.Brand className="brand" href="/"><img width="150px" src={logo} alt="" /></Navbar.Brand>
+                <Navbar.Brand className="brand" href="/"><img src={logo} alt="" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 </Navbar.Collapse>

@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import fakeData from '../fakeData/fakeData';
 import './Menus.css';
 import Menu from '../Menu/Menu';
+import { UserContext } from '../../App';
 
 const Menus = () => {
 
     const [matchedData, setMatchedData] = useState([]);
+    const [signedInUser, setSignedInUser] = useContext(UserContext);
 
     if(matchedData.length === 0){
         const newData = fakeData.filter(data => data.category === 'lunch')

@@ -3,6 +3,10 @@
     /* border: 5px solid red; */
 }
 
+.brand img{
+    width: 150px;
+}
+
 .nav-text{
     margin: 0px 20px;
     color: black;

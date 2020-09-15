@@ -5,7 +5,7 @@ import logo from '../../images/logo2.png';
 const Signin = () => {
     return (
         <div className="signup">
-            <img src={logo} alt=""/><br/><br/><br/>
+            <Link to="/"><img src={logo} alt=""/></Link><br/><br/><br/>
             <h3>Signin</h3>
             <form className="">
                 <input type="email" name="" id="" placeholder="Email" required/><br/><br/>

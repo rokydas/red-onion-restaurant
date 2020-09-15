@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Navbar } from 'react-bootstrap';
 import './Header.css';
 import logo from '../../images/logo2.png';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 const Header = () => {
+
+    const [signedInUser, setSignedInUser] = useContext(UserContext);
 
     return (
         <div className="header">
